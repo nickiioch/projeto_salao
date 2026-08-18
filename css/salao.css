@@ -1,0 +1,132 @@
+body{
+    background-color: #fce4ec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 20px;
+}
+
+h2{
+    background: #cc5488;
+    color: #fce4ec;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#banner{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    background-color: #ac2c64;
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.menu li{
+    display: inline;
+    margin-right: 30px;
+}
+
+.menu a{
+    color: #f8bbd0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font: 18px sans-serif;
+}
+
+.menu a:hover{
+    color: white;
+    
+}
+
+fieldset{
+    border: 3px solid #cc5488;
+    border-radius: 15px;
+    background-color: white;
+    padding: 25px;
+}
+
+legend{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #cc5488;
+}
+
+#nome{
+    width: 95%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.botao{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #cc5488;
+    color: #fce4ec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.botao:hover{
+    background-color: #ac2c64;
+
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.tabela-horario{
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+.tabela-horario th{
+    background-color: #ac2c64;
+    color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+.tabela-horario td{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabela-horario tr:nth-child(even){
+    background-color: #fce4ec;
+}
+
+.comprovante{
+    border: 2px solid #cc5488;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-comprovante{
+    color: #cc5488;
+    margin-top: 0;
+}

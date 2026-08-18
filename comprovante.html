@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Sara Stephany">
+    <meta name="author" content="Nicole Ochay">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Comprovante de Agendamento</title>
+    <title> Comprovante de Agendamento </title>
 
     <link rel="stylesheet" href="css/salao.css">
- </head>
+</head>
 
 <body>
 
@@ -17,35 +17,40 @@
 
     <script>
         let nomeCliente = localStorage.getItem("nomeCliente") || "Não informado";
-        let profissional = localStorage.getItem("profisional") || "Não informado";
+        let profissional = localStorage.getItem("profissional") || "Não informado";
         let sexoCliente = localStorage.getItem("sexoCliente") || "Não informado";
-        let listaServicos = localStorage.getItem("listaServicos") || "Não informado";
+        let listaServicos = localStorage.getItem("nomeCliente") || "Não informado";
         let dataAtendimento = localStorage.getItem("data") || "Não informado";
         let horarioAtendimento = localStorage.getItem("horario") || "Não informado";
         let areaResultado = document.getElementById("resultado");
 
         areaResultado.innerHTML = `
         <div class="comprovante">
-            <h3 class = "titulo-comprovante">
-                COMPROVANTE DE AGENDAMENHTO - SALÃO
+            <h3 class="titulo-comprovante">
+                COMPROVANTE DE AGENDAMENTO - SALÃO
             </h3>
             <hr>
+
             <p><strong>Cliente:</strong> ${nomeCliente}</p>
             <p><strong>Profissional:</strong> ${profissional}</p>
-            <p><strong>Sexo:</strong>${sexoCliente}</p>
+            <p><strong>Sexo:</strong> ${sexoCliente}</p>
             <p><strong>Serviços:</strong> ${listaServicos}</p>
             <p><strong>Data:</strong> ${dataAtendimento}</p>
-            <p><strong>Horario:</strong> ${horarioAtendimento}</p>
+            <p><strong>Horário:</strong> ${horarioAtendimento}</p>
 
             <button onclick="window.print()" class="botao">
-                IMPRIMIR COMPROVANTE 
+                IMPRIMIR COMPROVANTE
             </button>
-                
-                
+
             <br><br>
-            </div>
-            <a href="cadastro_agendamento.html" style="color: #ad1457; font-weight:bold;text-decoration: none;"> ← VOLTAR PARA O CADASTRO </a>
+            <a href="cadastro_agendamento.html" style="color: #ad1457; font-weight: bold; text-decoration: none;"> ← VOLTAR PARA O CADASTRO </a>
+            
+        </div>
         `;
+        
+
+
+
     </script>
     
 </body>
