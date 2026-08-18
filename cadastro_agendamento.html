@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="author" content="Sara Stephany">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agendamento</title>
+
+     <link rel="stylesheet" href="css/salao.css">
+</head>
+
+<body>
+    
+    <h2>AGENDAMENTO</h2>
+    <ul class="menu">
+        <li><a href="index.html" target="principal">PÁGINA INICIAL</a></li>
+    </ul>
+
+    <fieldset>
+        <legend><strong> DADOS DO AGEDAMENTO</strong></legend>
+
+        <form onsubmit="cadastrarAgendamento()"; return false;"> 
+        <label><strong>Nome do Cliente:</strong></label><br>
+        <input type="text" id="nome" style="width: 98%; padding: 10px;" required><br><br>
+
+        <label><strong>Profissinal Preferido</strong></label>
+        <select id="profissional">
+            <option value="Carlos (Cabeleireiro)"> Carlos (Cabeleieiro)</option>
+            <option value="Mariana (Cabeleireira)"> Mariana (Cabeleieira)</option>
+            <option value="Roberto (Carbeiro)"> Roberto (Barbeiro)</option>
+             <option value="Ana (Esteticista)"> Carlos (Esteticista)</option>
+             <option value="Indidiferente">Indiferente</option>
+        </select>
+
+        <label><strong>Sexo</strong></label>
+        <input type="radio" name="sexo" value="Masculino">Masculino
+        <input type="radio" name="sexo" value="Feminino">Feminino<br><br>
+
+        <label><strong>Serviços Desejados</strong></label>
+
+        <input type="checkbox" class="serv" value="Corte">Corte de cabelo
+        <input type="checkbox" class="serv" value="Barba">Barba
+        <input type="checkbox" class="serv" value="Coloração">Coloração
+        <input type="checkbox" class="serv" value="Escova / Hidratação">Escova / Hidratação
+        <input type="checkbox" class="serv" value="Manicure">Manicure<br><br>
+
+        <label><strong>Data do Atendimento:</strong></label>
+        <input type="date" id="data" required><br><br>
+
+        <label><strong>Horário:</strong></label>
+        <input type="time" id="horario" required><br><br>
+
+        <input class="butao" type="submit" value="CONFIRMAR AGENDAMENTO">
+        </form>
+    </fieldset>
+
+    <div id="resultado" style="margin-top: 20px; min-width: 50px;"></div>
+</body>
+</html>
+
